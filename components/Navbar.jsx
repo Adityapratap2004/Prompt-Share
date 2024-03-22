@@ -43,7 +43,7 @@ const Navbar = () => {
                             Sign Out
                         </button>
                         <Link href="/profile">
-                            <Image src={session?.user.image} width={37} height={37} alt="profile" className='rounded-full' />
+                            <Image src={session?.user.image} width={47} height={47} alt="profile" className='rounded-full' />
                         </Link>
                     </div> :
                         <>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <div className='sm:hidden flex relative'>
                 {
                     session?.user ? <div className='flex'>
-                        <Image src={session?.user.image} width={37} height={37} alt="profile" className='rounded-full'
+                        <Image src={session?.user.image} width={47} height={47} alt="profile" className='rounded-full'
                             onClick={() => { setToggleDropdown((prev) => !prev) }} />
                         {
                             toggleDropdown && (
